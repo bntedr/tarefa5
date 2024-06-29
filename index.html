@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extra</title>
+</head>
+<body>
+<h1>Primeiras Letras dos Elementos do Array</h1>
+<script>
+    //Extra
+    let palavras = ["banana", "maçã", "laranja"];
+
+    let primeirasLetras = [];
+    for (let i = 0; i < palavras.length; i++) {
+        let primeiraLetra = palavras[i].slice(0, 1);
+        primeirasLetras.push(primeiraLetra);
+    }
+
+    console.log("Primeiras letras:", primeirasLetras);
+    document.write("Primeiras letras: " + primeirasLetras.join(", "));
+</script>
+</body>
+</html>
